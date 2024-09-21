@@ -15,6 +15,8 @@
 
     .product-card-image {
         position: relative;
+        overflow: hidden;
+        border-radius: 16px;
     }
 
     .product-card-tag {
@@ -25,4 +27,46 @@
         border-radius: 20px;
         padding: 5px 10px;
         color: #FFFFFF;
+    }
+
+    .product-card-info {
+        padding: 15px;
+    }
+
+    .product-card-info-top {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .product-card-info-top-price {
+        color: #ff0000;
+    }
+
+    .product-card-info-bottom {
+        display: flex;
+    }
+    
+
+
+    .icon {
+        background-repeat: no-repeat;
+        background-position: center;
+        display: inline-block;
+        width: 20px;
+        height: 20px;
+        margin-right: 5px;
+    }
+
+
+    .icon.icon-bed {
+        background-image: url("../img/Slider/bed.svg");
+        
+    }
+
+    .icon.icon-dus {
+        background-image: url("../img/Slider/dus.svg");
+    }
+
+    .icon.icon-sqft{
+        background-image: url("../img/Slider/sqft.svg");
     }

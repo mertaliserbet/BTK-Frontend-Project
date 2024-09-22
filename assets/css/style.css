@@ -70,14 +70,14 @@ img {
 
 
     .icon.icon-bed {
-        background-image: url("../img/Slider/bed.svg");
+        background-image: url("../img/icon/bed.svg");
         
     }
 
     .icon.icon-bath {
-        background-image: url("../img/Slider/dus.svg");
+        background-image: url("../img/icon/bath.svg");
     }
 
     .icon.icon-sqft{
-        background-image: url("../img/Slider/sqft.svg");
+        background-image: url("../img/icon/sqft.svg");
     }

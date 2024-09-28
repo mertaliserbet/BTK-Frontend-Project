@@ -251,3 +251,33 @@
         visibility: visible;
         opacity: 1;
     }
+
+    .local-expertise {
+        background-color: #1F4B43;
+
+    }
+    
+    .btn-main-gold{
+        background-color: #E7CB73;
+        border-radius: 12px;
+        padding: 10px 20px;
+        outline: none;
+        border: none;
+    }
+
+    .local-expertise-image{
+        position: relative;
+    }
+
+    .local-expertise-image-img{
+        border-radius: 20px;
+    }
+
+    .local-expertise-image-tag{
+        position: absolute;
+        left: 20px;
+        top: 20px;
+        background-color: #FFFFFF;
+        border-radius: 16px;
+        padding: 8px 16px;
+    }

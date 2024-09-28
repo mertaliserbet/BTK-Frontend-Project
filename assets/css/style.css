@@ -285,3 +285,24 @@
     .text-gold{
         color:  #E7C873;
     }
+
+    .icon-star{
+        background-image: url("../img/local-expertise/star.png");
+        width: 12px;
+        height: 12px;
+        
+    }
+
+    .icon-star {
+        background-size: contain;
+    }
+
+    .icon-star.active{
+        filter: grayscale(0);
+    }
+
+    .customers-image{
+        border-radius: 16px;
+        width: 50px;
+        height: 50px;
+    }

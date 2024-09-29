@@ -407,3 +407,18 @@ img {
         }
     }
 }
+
+.sitemap {
+    list-style: none;
+    li {
+        a {
+            color: #1A1A1A;
+            text-decoration: none;
+            display: block;
+            transition: all 200ms;
+            &:hover {
+                margin-left: 10px;
+            }
+        }
+    }
+}

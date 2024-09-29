@@ -343,9 +343,29 @@ img {
 
 .recent-article-card {
     &-image {
+        position: relative;
+
+        span {
+            max-width: 100%;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            border-radius: 8px;
+            padding: 16px;
+            opacity: 0;
+            background-color: #a2ab26;
+        }
+
+
         img {
             display: block;
             border-radius: 16px 16px 0 0;
+        }
+        &:hover span {
+            visibility: visible;
+            opacity: 1;
+            cursor: pointer;
         }
     }
 
@@ -354,17 +374,25 @@ img {
         &-date {
             display: flex;
             justify-content: center;
-            align-items: center;
+            
             
             span {
-                &::after {
-                    border-radius: 50%;
-                    background-color: #3D3E3F;
-                    width: 4px;
-                    height: 4px;
-                    display: block;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                    &:not(:last-child)::after {
+                        content: '';
+                        display: block;
+                        width: 4px;
+                        height: 4px;
+                        border-radius: 50%;
+                        background-color: #3d3e3f;
+                        margin-left: 8px;
+                        margin-right: 8px;
+                        
+                    }
                 }
-            }
         }
 
         &-description {

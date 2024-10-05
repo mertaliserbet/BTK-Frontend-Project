@@ -1,6 +1,6 @@
 :root {
     --tag-one: #1F4B43;
-    --content-one: #FFFF00;
+    --content-one: #FFFFFF; 
 }
 
 
@@ -46,7 +46,7 @@
 
 .product-card {
     position: relative;
-
+    
     &-tag {
         background-color: var(--tag-one);
         color: #FFFFFF;
@@ -67,5 +67,7 @@
 
     &-img {
         max-width: 100%;
+       
     }
 }
+

@@ -367,11 +367,9 @@ img {
                 object-fit: cover;
             }
             &-content {
-                background-color: #e7c873;
-                width: 210px;
-                height: 185px;
+                position: relative;
                 margin-top: 20px;
-                border-radius: 12px;
+                
                 margin-left: 85px;
             }
         }

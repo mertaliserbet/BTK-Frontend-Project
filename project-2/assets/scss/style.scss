@@ -4,7 +4,7 @@
 }
 
 img {
-    max-width: 100%;
+    min-width: 100%;
 }
 
 .icon {
@@ -432,7 +432,8 @@ img {
     background-repeat: no-repeat;
     background-color: #B0C5D6;
     background-size: cover;
-    
+   
+
     &-content {
         justify-content: center;
         align-items: center;

@@ -422,3 +422,26 @@ img {
         
     }
 }
+
+
+.discover-place {
+    position: relative;
+    background-image: url("../img/discover-place/discover-place-slider.jpg");
+    background-attachment: fixed;
+    background-position: bottom center;
+    background-repeat: no-repeat;
+    background-color: #B0C5D6;
+    background-size: cover;
+    
+    &-content {
+        justify-content: center;
+        align-items: center;
+        &-button {
+            
+            justify-content: center;
+            align-items: center;
+            width: 195px;
+            height: 55px;
+        }
+    }
+}

@@ -1,10 +1,14 @@
 :root {
     --bg-one: #1f4b43;
+    --bg-one-hover: #286157;
     --bg-two: #e7c873;
+    --bg-two-hover: #e7c873;
+    --bg-blue: #254ef0;
+    --bg-blue-hover: #365cf5;
 }
 
 img {
-    width: 100%;
+    max-width: 100%;
 }
 
 .icon {
@@ -12,6 +16,59 @@ img {
     background-repeat: no-repeat;
     background-size: contain;
     display: inline-block;
+    &-check {
+        background-image: url("../img/icon/check.svg");
+        width: 20px;
+        height: 20px;
+    }
+    &-arrow-right {
+        background-image: url("../img/icon/arrow-right.svg");
+        width: 20px;
+        height: 20px;
+    }
+}
+
+.navbar {
+    border-radius: 0 0 16px 16px;
+    @media (min-width: 576px) {
+        border-radius: 50rem;
+    }
+    //border-radius: 16px !important;
+    //@media (min-width: 992px) { 
+    //  border-radius: 50rem !important; //navbardaki rounded-pilli de silebiliriz silemediğimiz senaryoda ikisine de !important verebiliriz.
+    //}
+}
+
+.btn-main {
+    outline: none;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 12px;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    font-size: 1.1rem;
+    transition: all 250ms;
+    &-one {
+        background-color: var(--bg-one);
+        &:hover {
+            background-color: var(--bg-one-hover);
+        }
+    }
+    &-two {
+        background-color: var(--bg-two);
+        &:hover {
+            background-color: var(--bg-two-hover);
+        }
+    }
+    &-blue {
+        background-color: var(--bg-blue);
+        &:hover {
+            background-color: var(--bg-blue-hover);
+        }
+    }
 }
 
 .hero-slider {
@@ -93,13 +150,15 @@ img {
                 height: 50px;
                 padding: 5px;
                 .tag-icon {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    flex-shrink: 0;
                     background-color: #ffffff;
                     border-radius: 50%;
                     width: 40px;
                     height: 40px;
-                    display: flex;
-                    align-items: center;
-                    justify-content: center;
+                    
                 }
                 span {
                     color: #ffffff;
@@ -110,8 +169,13 @@ img {
     &-image {
         min-width: 100%;
         width: 100%;
-        min-height: 400px;
         background-color: #C0CBC9;
+        object-fit: cover;
+        min-height: 100dvh;
+        @media (min-width:1200px) {
+            min-height: 500px;
+        }
+        
     }
 }
 
@@ -204,13 +268,13 @@ img {
                 }
                 &-square {
                     background-image: url("../img/icon/featured-properties-icon/square.svg");
-                }
+                } 
             }
         }
     }
     &-image {
         img {
-            max-width: 100%;
+            width: 100%;
             border-radius: 12px;
         }
     }

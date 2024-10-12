@@ -17,12 +17,12 @@ img {
     background-size: contain;
     display: inline-block;
     &-check {
-        background-image: url("../img/icon/check.svg");
+        background-image: url("../img/icon/why-you-should-work-icon/tick.svg");
         width: 20px;
         height: 20px;
     }
     &-arrow-right {
-        background-image: url("../img/icon/arrow-right.svg");
+        background-image: url("../img/icon/why-you-should-work-icon/arrow-right.svg");
         width: 20px;
         height: 20px;
     }
@@ -70,7 +70,6 @@ img {
         }
     }
 }
-
 .hero-slider {
     position: relative;
     display: flex;
@@ -83,6 +82,9 @@ img {
         align-items: center;
         justify-content: center;
         gap: 10px;
+        @media (max-width: 992px) {
+            margin-top: 70px;
+        }
         &-info {
             color: var(--bg-one);
             border: 1px solid var(--bg-one);
@@ -94,7 +96,10 @@ img {
         &-title {
             color: var(--bg-one);
             font-weight: 600;
-            font-size: 4rem;
+            font-size: 2rem;
+            @media (min-width: 992px) {
+                font-size: 4rem;
+            }
         }
         &-desc {
             color: var(--bg-one);
@@ -148,17 +153,16 @@ img {
                 backdrop-filter: blur(5px);
                 border-radius: 70px;
                 height: 50px;
-                padding: 5px;
+                padding: 5px 20px 5px 5px;
                 .tag-icon {
+                    background-color: #ffffff;
                     display: flex;
                     align-items: center;
                     justify-content: center;
                     flex-shrink: 0;
-                    background-color: #ffffff;
                     border-radius: 50%;
                     width: 40px;
                     height: 40px;
-                    
                 }
                 span {
                     color: #ffffff;
@@ -169,13 +173,12 @@ img {
     &-image {
         min-width: 100%;
         width: 100%;
-        background-color: #C0CBC9;
+        background-color: #c0cbc9;
         object-fit: cover;
         min-height: 100dvh;
-        @media (min-width:1200px) {
+        @media (min-width: 1200px) {
             min-height: 500px;
         }
-        
     }
 }
 
@@ -268,12 +271,13 @@ img {
                 }
                 &-square {
                     background-image: url("../img/icon/featured-properties-icon/square.svg");
-                } 
+                }
             }
         }
     }
     &-image {
         img {
+            min-width: 100%;
             width: 100%;
             border-radius: 12px;
         }
@@ -421,92 +425,102 @@ img {
     }
 }
 
-.why-you-should-work {
-    background-color: #FFF8F6;
-    &-card {
+.should-work {
+    background-color: #fff8f6;
+    &-image {
+        border-radius: 16px;
+        overflow: hidden;
+        &:hover img {
+            transform: scale(1.1);
+        }
         &-one {
-            
-            img {
-                width: 100%;
-                object-fit: cover;
-            }
-            &-content {
-                position: relative;
-                margin-top: 20px;
-                
-                margin-left: 85px;
-            }
+            margin-bottom: 24px;
         }
         &-two {
-            margin-top: 150px;
-            
-            img {
-                width: 100%;
-                object-fit: cover;
+            margin-top: 120px;
+        }
+        img {
+            width: 100%;
+            height: 100%;
+            transition: all 250ms;
+        }
+
+        &-content {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            background-color: var(--bg-two);
+            border-radius: 16px;
+            padding: 24px;
+            margin-left: 100px;
+            &-icon {
+                background-color: var(--bg-one);
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 60px;
+                height: 60px;
+                border-radius: 50%;
             }
         }
     }
-    &-property {
-        display: flex;
-        gap: 15px;
+    &-content {
         &-icon {
-            background-color: #FFFFFF;
-            width: 50px;
-            height: 50px;
-            border-radius: 50%;
+            background-color: #ffffff;
+            display: flex;
             align-items: center;
             justify-content: center;
-            display: flex;
-            border: 1px solid #C0CBC9;
-            .icon {
-                display: block;
-                width: 25px;
-                height: 25px;
-                &-tick {
-                    background-image: url("../img/icon/why-you-should-work-icon/tick.svg");
-                }
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            .icon-check {
+                width: 15px;
+                height: 15px;
             }
         }
-        &:hover &-icon {
-            background-color: #77642f;
-        }
-    }
-    &-btn {
-        position: relative;
-        background-color: #1f4b43;
-        width: 165px;
-        height: 55px;
-        text-align: center;
-        border-radius: 12px;
-        background-position: center;
-        &-link {
-            text-decoration: none;
-            color: #FFFFFF;
-            }
-        
     }
 }
 
+.blog-card {
+    &-content {
+        white-space: nowrap; /* alt satıra inme */
+        overflow: hidden; /* taşan kısımları gizle */
+        text-overflow: ellipsis; /* devamı varsa sonuna üç nokta */
+    }
+}
 
-.discover-place {
-    position: relative;
+.bg {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    &-discovery {
+        background-image: url("../img/discover-place/discover-place-slider.jpg");
+        background-attachment: fixed;
+        position: relative;
+        &::after {
+            content: "";
+            background-color: rgba(218, 220, 227, 0.8);
+            display: block;
+            position: absolute;
+            inset: 0;
+            width: 100%;
+            height: 100%;
+        }
+    }
+}
+
+.bg-estate {
     background-image: url("../img/discover-place/discover-place-slider.jpg");
     background-attachment: fixed;
-    background-position: bottom center;
-    background-repeat: no-repeat;
-    background-color: #B0C5D6;
     background-size: cover;
-   
-
-    &-content {
-        justify-content: center;
-        align-items: center;
-        &-button {
-            
-            justify-content: center;
-            align-items: center;
-            width: 195px;
-            height: 55px;
-        }
+    background-repeat: no-repeat;
+    position: relative;
+    &::after {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        inset: 0;
+        background-color: rgba(255, 255, 255, 0.5);
     }
 }

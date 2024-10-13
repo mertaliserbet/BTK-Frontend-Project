@@ -26,6 +26,23 @@ img {
         width: 20px;
         height: 20px;
     }
+    &-social {
+        width: 20px;
+        height: 20px;
+
+        &-facebook {
+            background-image: url("../img/icon/footer-icon/facebook.svg");
+        }
+        &-x {
+            background-image: url("../img/icon/footer-icon/twitter.svg");
+        }
+        &-instagram {
+            background-image: url("../img/icon/footer-icon/instagram.svg");
+        }
+        &-linkedin {
+            background-image: url("../img/icon/footer-icon/linkedin.svg");
+        }
+    }
 }
 
 .navbar {
@@ -507,6 +524,12 @@ img {
             height: 100%;
         }
     }
+    &-list {
+        background-image: url("../img/liste/liste-image.jpg");
+        &-one {
+            color: #E7C873;
+        }
+    }
 }
 
 .bg-estate {
@@ -523,4 +546,35 @@ img {
         inset: 0;
         background-color: rgba(255, 255, 255, 0.5);
     }
+}
+
+.these-cities {
+
+    display: flex;
+    &-image { 
+        &-big,
+        &-small {
+            position: relative;
+            border-radius: 16px;
+            object-fit: cover;
+            &-content {
+                position: absolute;
+                background-color: rgba(255, 255, 255,0.5);
+                backdrop-filter: blur(5px);
+                padding: 20px;
+                bottom: 5%;
+                left: 5%;
+                right: 5%;
+                border-radius: 16px;
+                display: flex;
+                flex-direction: column;
+                gap: 5px;
+                line-height: 100%;
+                color: #FFFFFF;
+            }
+            
+        }
+        
+    }
+    
 }

@@ -28,7 +28,7 @@
                             <a class="nav-link active" aria-current="page" href="index.html">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="liste.html">Liste</a>
+                            <a class="nav-link" href="#list">Liste</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#">Listings</a>
@@ -64,204 +64,673 @@
         </div>
     </section>
 
-    <section class="mt-5 py-5">
+    <section class="mt-5 py-5" id="list">
         <div class="container">
             <div class="d-flex flex-column align-items-center justify-content-center mb-5">
                 <span class="fs-2 fw-semibold">Properties for list</span>
                 <span class="fs-6 fw-light text-center">Lorem ipsum dolor sit amet</span>
             </div>
             <div class="row">
-                <div class="col-3">
-                    <div class="property-card">
-                        <div class="property-card-image">
-                            <div class="property-card-image-tag">
-                                <span class="bg-one text-white">
-                                    For Rent
-                                </span>
-                                <span class="bg-two text-dark">
-                                    Featured
-                                </span>
+                <div class="d-none d-lg-block col-lg-3">
+                    <div class="property-filter mb-3">
+                        <div class="property-filter-content">
+                            <div class="property-filter-content-title">
+                                Kategoriler
                             </div>
-                            <img src="assets/img/product/product-1.jpg" alt="property">
-                        </div>
-                        <div class="property-card-content">
-                            <div class="property-card-content-top">
-                                <div class="property-card-content-top-title">
-                                    New Apartment Nice Wiew
-                                </div>
-                                <div class="property-card-content-top-address">
-                                    <i class="icon icon-w20 icon-location"></i>
-                                    <span>42 Avenue O, Brooklyn</span>
-                                </div>
-                                <div class="d-flex gap-2">
-                                    <div class="property-card-content-top-feature">
-                                        <i class="icon icon-w16 icon-bad"></i>
-                                        <span>4</span>
-                                    </div>
-                                    <div class="property-card-content-top-feature">
-                                        <i class="icon icon-w16 icon-shower"></i>
-                                        <span>1</span>
-                                    </div>
-                                    <div class="property-card-content-top-feature">
-                                        <i class="icon icon-w16 icon-square"></i>
-                                        <span>460</span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="property-card-content-bottom">
-                                <div class="property-card-content-bottom-price">
-                                    <span>$850</span>
-                                    <small>/month</small>
-                                </div>
-                                <div class="property-card-content-bottom-favorite">
-                                    <i class="icon icon-w20 icon-favorite"></i>
-                                </div>
+                            <div class="property-filter-content-elements">
+                                <a href="#" class="filter-link">Kiralık</a>
+                                <a href="#" class="filter-link">Satılık</a>
+                                <a href="#" class="filter-link">Yazlık</a>
+                                <a href="#" class="filter-link">Devren Kiralık</a>
+                                <a href="#" class="filter-link">Villa</a>
+                                <a href="#" class="filter-link">Yalı</a>
                             </div>
                         </div>
-                    </div>
-                </div>
-                <div class="col-3">
-                    <div class="property-card">
-                        <div class="property-card-image">
-                            <div class="property-card-image-tag">
-                                <span class="bg-one text-white">
-                                    For Rent
-                                </span>
-                                <span class="bg-two text-dark">
-                                    Featured
-                                </span>
+                        <div class="property-filter-content">
+                            <div class="property-filter-content-title">
+                                İlan Tipi
                             </div>
-                            <img src="assets/img/product/product-2.jpg" alt="property">
-                        </div>
-                        <div class="property-card-content">
-                            <div class="property-card-content-top">
-                                <div class="property-card-content-top-title">
-                                    Villa Garden With Pool
+                            <div class="property-filter-content-elements">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" id="kiralik">
+                                    <label class="form-check-label" for="kiralik">
+                                        Kiralık
+                                    </label>
                                 </div>
-                                <div class="property-card-content-top-address">
-                                    <i class="icon icon-w20 icon-location"></i>
-                                    <span>6822 Bay Pkwy, Brooklyn</span>
-                                </div>
-                                <div class="d-flex gap-2">
-                                    <div class="property-card-content-top-feature">
-                                        <i class="icon icon-w16 icon-bad"></i>
-                                        <span>3</span>
-                                    </div>
-                                    <div class="property-card-content-top-feature">
-                                        <i class="icon icon-w16 icon-shower"></i>
-                                        <span>1</span>
-                                    </div>
-                                    <div class="property-card-content-top-feature">
-                                        <i class="icon icon-w16 icon-square"></i>
-                                        <span>350</span>
-                                    </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" id="satilik">
+                                    <label class="form-check-label" for="satilik">
+                                        Satılık
+                                    </label>
                                 </div>
                             </div>
-                            <div class="property-card-content-bottom">
-                                <div class="property-card-content-bottom-price">
-                                    <span>$350</span>
-                                    <small>/month</small>
-                                </div>
-                                <div class="property-card-content-bottom-favorite">
-                                    <i class="icon icon-w20 icon-favorite"></i>
-                                </div>
+                        </div12 
+                        <div class="property-filter-content">
+                            <div class="property-filter-content-title">
+                                Danışman Seçimi
+                            </div>
+                            <div class="property-filter-content-elements">
+                                <select class="form-select">
+                                    <option disabled hidden selected>Danışman Seçiniz</option>
+                                    <option value="1">Dusan Tadic</option>
+                                    <option value="2">Fred</option>
+                                    <option value="3">İrfan Can Kahveci</option>
+                                </select>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-3">
-                    <div class="property-card">
-                        <div class="property-card-image">
-                            <div class="property-card-image-tag">
-                                <span class="bg-one text-white">
-                                    For Rent
-                                </span>
-                                <span class="bg-two text-dark">
-                                    Featured
-                                </span>
+                <div class="col-12 col-lg-9">
+                    <div class="row">
+                        <div class="col-12 col-md-4 mb-3">
+                            <div class="property-card">
+                                <div class="property-card-image">
+                                    <div class="property-card-image-tag">
+                                        <a href="#" class="bg-one text-white">
+                                            For Rent
+                                        </a>
+                                        <a href="#" class="bg-two text-dark">
+                                            Featured
+                                        </a>
+                                    </div>
+                                    <a href="#">
+                                        <img src="assets/img/product/product-1.jpg" alt="property">
+                                    </a>
+                                </div>
+                                <div class="property-card-content">
+                                    <div class="property-card-content-top">
+                                        <a href="#" class="property-card-content-top-title">
+                                            Villa Garden With Pool
+                                        </a>
+                                        <div class="property-card-content-top-address">
+                                            <i class="icon icon-w20 icon-location"></i>
+                                            <span>6822 Bay Pkwy, Brooklyn</span>
+                                        </div>
+                                        <div class="d-flex gap-2">
+                                            <div class="property-card-content-top-feature">
+                                                <i class="icon icon-w16 icon-bad"></i>
+                                                <span>3</span>
+                                            </div>
+                                            <div class="property-card-content-top-feature">
+                                                <i class="icon icon-w16 icon-shower"></i>
+                                                <span>1</span>
+                                            </div>
+                                            <div class="property-card-content-top-feature">
+                                                <i class="icon icon-w16 icon-square"></i>
+                                                <span>2</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="property-card-content-bottom">
+                                        <div class="property-card-content-bottom-price">
+                                            <span>$350</span>
+                                            <small>/month</small>
+                                        </div>
+                                        <div class="property-card-content-bottom-favorite">
+                                            <i class="icon icon-w20 icon-favorite"></i>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
-                            <img src="assets/img/product/product-3.jpg" alt="property">
                         </div>
-                        <div class="property-card-content">
-                            <div class="property-card-content-top">
-                                <div class="property-card-content-top-title">
-                                    Ely Parkway Apartment
-                                </div>
-                                <div class="property-card-content-top-address">
-                                    <i class="icon icon-w20 icon-location"></i>
-                                    <span>7203 20th Ave, Brooklyn</span>
-                                </div>
-                                <div class="d-flex gap-2">
-                                    <div class="property-card-content-top-feature">
-                                        <i class="icon icon-w16 icon-bad"></i>
-                                        <span>4</span>
+                        <div class="col-12 col-md-4 mb-3">
+                            <div class="property-card">
+                                <div class="property-card-image">
+                                    <div class="property-card-image-tag">
+                                        <a href="#" class="bg-one text-white">
+                                            For Rent
+                                        </a>
+                                        <a href="#" class="bg-two text-dark">
+                                            Featured
+                                        </a>
                                     </div>
-                                    <div class="property-card-content-top-feature">
-                                        <i class="icon icon-w16 icon-shower"></i>
-                                        <span>1</span>
-                                    </div>
-                                    <div class="property-card-content-top-feature">
-                                        <i class="icon icon-w16 icon-square"></i>
-                                        <span>560</span>
-                                    </div>
+                                    <a href="#">
+                                        <img src="assets/img/product/product-2.jpg" alt="property">
+                                    </a>
                                 </div>
-                            </div>
-                            <div class="property-card-content-bottom">
-                                <div class="property-card-content-bottom-price">
-                                    <span>$5,800</span>
-                                    <small>/month</small>
-                                </div>
-                                <div class="property-card-content-bottom-favorite">
-                                    <i class="icon icon-w20 icon-favorite"></i>
+                                <div class="property-card-content">
+                                    <div class="property-card-content-top">
+                                        <a href="#" class="property-card-content-top-title">
+                                            Villa Garden With Pool
+                                        </a>
+                                        <div class="property-card-content-top-address">
+                                            <i class="icon icon-w20 icon-location"></i>
+                                            <span>6822 Bay Pkwy, Brooklyn</span>
+                                        </div>
+                                        <div class="d-flex gap-2">
+                                            <div class="property-card-content-top-feature">
+                                                <i class="icon icon-w16 icon-bad"></i>
+                                                <span>3</span>
+                                            </div>
+                                            <div class="property-card-content-top-feature">
+                                                <i class="icon icon-w16 icon-shower"></i>
+                                                <span>1</span>
+                                            </div>
+                                            <div class="property-card-content-top-feature">
+                                                <i class="icon icon-w16 icon-square"></i>
+                                                <span>2</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="property-card-content-bottom">
+                                        <div class="property-card-content-bottom-price">
+                                            <span>$350</span>
+                                            <small>/month</small>
+                                        </div>
+                                        <div class="property-card-content-bottom-favorite">
+                                            <i class="icon icon-w20 icon-favorite"></i>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                </div>
-                <div class="col-3">
-                    <div class="property-card">
-                        <div class="property-card-image">
-                            <div class="property-card-image-tag">
-                                <span class="bg-one text-white">
-                                    For Rent
-                                </span>
-                                <span class="bg-two text-dark">
-                                    Featured
-                                </span>
+                        <div class="col-12 col-md-4 mb-3">
+                            <div class="property-card">
+                                <div class="property-card-image">
+                                    <div class="property-card-image-tag">
+                                        <a href="#" class="bg-one text-white">
+                                            For Rent
+                                        </a>
+                                        <a href="#" class="bg-two text-dark">
+                                            Featured
+                                        </a>
+                                    </div>
+                                    <a href="#">
+                                        <img src="assets/img/product/product-3.jpg" alt="property">
+                                    </a>
+                                </div>
+                                <div class="property-card-content">
+                                    <div class="property-card-content-top">
+                                        <a href="#" class="property-card-content-top-title">
+                                            Villa Garden With Pool
+                                        </a>
+                                        <div class="property-card-content-top-address">
+                                            <i class="icon icon-w20 icon-location"></i>
+                                            <span>6822 Bay Pkwy, Brooklyn</span>
+                                        </div>
+                                        <div class="d-flex gap-2">
+                                            <div class="property-card-content-top-feature">
+                                                <i class="icon icon-w16 icon-bad"></i>
+                                                <span>3</span>
+                                            </div>
+                                            <div class="property-card-content-top-feature">
+                                                <i class="icon icon-w16 icon-shower"></i>
+                                                <span>1</span>
+                                            </div>
+                                            <div class="property-card-content-top-feature">
+                                                <i class="icon icon-w16 icon-square"></i>
+                                                <span>2</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="property-card-content-bottom">
+                                        <div class="property-card-content-bottom-price">
+                                            <span>$350</span>
+                                            <small>/month</small>
+                                        </div>
+                                        <div class="property-card-content-bottom-favorite">
+                                            <i class="icon icon-w20 icon-favorite"></i>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
-                            <img src="assets/img/product/product-4.jpg" alt="property">
                         </div>
-                        <div class="property-card-content">
-                            <div class="property-card-content-top">
-                                <div class="property-card-content-top-title">
-                                    Modern Elegant Apartment
-                                </div>
-                                <div class="property-card-content-top-address">
-                                    <i class="icon icon-w20 icon-location"></i>
-                                    <span>1458 W Taylor St</span>
-                                </div>
-                                <div class="d-flex gap-2">
-                                    <div class="property-card-content-top-feature">
-                                        <i class="icon icon-w16 icon-bad"></i>
-                                        <span>4</span>
+                        <div class="col-12 col-md-4 mb-3">
+                            <div class="property-card">
+                                <div class="property-card-image">
+                                    <div class="property-card-image-tag">
+                                        <a href="#" class="bg-one text-white">
+                                            For Rent
+                                        </a>
+                                        <a href="#" class="bg-two text-dark">
+                                            Featured
+                                        </a>
                                     </div>
-                                    <div class="property-card-content-top-feature">
-                                        <i class="icon icon-w16 icon-shower"></i>
-                                        <span>1</span>
+                                    <a href="#">
+                                        <img src="assets/img/product/product-6.jpg" alt="property">
+                                    </a>
+                                </div>
+                                <div class="property-card-content">
+                                    <div class="property-card-content-top">
+                                        <a href="#" class="property-card-content-top-title">
+                                            Villa Garden With Pool
+                                        </a>
+                                        <div class="property-card-content-top-address">
+                                            <i class="icon icon-w20 icon-location"></i>
+                                            <span>6822 Bay Pkwy, Brooklyn</span>
+                                        </div>
+                                        <div class="d-flex gap-2">
+                                            <div class="property-card-content-top-feature">
+                                                <i class="icon icon-w16 icon-bad"></i>
+                                                <span>3</span>
+                                            </div>
+                                            <div class="property-card-content-top-feature">
+                                                <i class="icon icon-w16 icon-shower"></i>
+                                                <span>1</span>
+                                            </div>
+                                            <div class="property-card-content-top-feature">
+                                                <i class="icon icon-w16 icon-square"></i>
+                                                <span>2</span>
+                                            </div>
+                                        </div>
                                     </div>
-                                    <div class="property-card-content-top-feature">
-                                        <i class="icon icon-w16 icon-square"></i>
-                                        <span>300</span>
+                                    <div class="property-card-content-bottom">
+                                        <div class="property-card-content-bottom-price">
+                                            <span>$350</span>
+                                            <small>/month</small>
+                                        </div>
+                                        <div class="property-card-content-bottom-favorite">
+                                            <i class="icon icon-w20 icon-favorite"></i>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="property-card-content-bottom">
-                                <div class="property-card-content-bottom-price">
-                                    <span>$590</span>
-                                    <small>/month</small>
+                        </div>
+                        <div class="col-12 col-md-4 mb-3">
+                            <div class="property-card">
+                                <div class="property-card-image">
+                                    <div class="property-card-image-tag">
+                                        <a href="#" class="bg-one text-white">
+                                            For Rent
+                                        </a>
+                                        <a href="#" class="bg-two text-dark">
+                                            Featured
+                                        </a>
+                                    </div>
+                                    <a href="#">
+                                        <img src="assets/img/product/product-4.jpg" alt="property">
+                                    </a>
                                 </div>
-                                <div class="property-card-content-bottom-favorite">
-                                    <i class="icon icon-w20 icon-favorite"></i>
+                                <div class="property-card-content">
+                                    <div class="property-card-content-top">
+                                        <a href="#" class="property-card-content-top-title">
+                                            Villa Garden With Pool
+                                        </a>
+                                        <div class="property-card-content-top-address">
+                                            <i class="icon icon-w20 icon-location"></i>
+                                            <span>6822 Bay Pkwy, Brooklyn</span>
+                                        </div>
+                                        <div class="d-flex gap-2">
+                                            <div class="property-card-content-top-feature">
+                                                <i class="icon icon-w16 icon-bad"></i>
+                                                <span>3</span>
+                                            </div>
+                                            <div class="property-card-content-top-feature">
+                                                <i class="icon icon-w16 icon-shower"></i>
+                                                <span>1</span>
+                                            </div>
+                                            <div class="property-card-content-top-feature">
+                                                <i class="icon icon-w16 icon-square"></i>
+                                                <span>2</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="property-card-content-bottom">
+                                        <div class="property-card-content-bottom-price">
+                                            <span>$350</span>
+                                            <small>/month</small>
+                                        </div>
+                                        <div class="property-card-content-bottom-favorite">
+                                            <i class="icon icon-w20 icon-favorite"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-4 mb-3">
+                            <div class="property-card">
+                                <div class="property-card-image">
+                                    <div class="property-card-image-tag">
+                                        <a href="#" class="bg-one text-white">
+                                            For Rent
+                                        </a>
+                                        <a href="#" class="bg-two text-dark">
+                                            Featured
+                                        </a>
+                                    </div>
+                                    <a href="#">
+                                        <img src="assets/img/product/product-5.jpg" alt="property">
+                                    </a>
+                                </div>
+                                <div class="property-card-content">
+                                    <div class="property-card-content-top">
+                                        <a href="#" class="property-card-content-top-title">
+                                            Villa Garden With Pool
+                                        </a>
+                                        <div class="property-card-content-top-address">
+                                            <i class="icon icon-w20 icon-location"></i>
+                                            <span>6822 Bay Pkwy, Brooklyn</span>
+                                        </div>
+                                        <div class="d-flex gap-2">
+                                            <div class="property-card-content-top-feature">
+                                                <i class="icon icon-w16 icon-bad"></i>
+                                                <span>3</span>
+                                            </div>
+                                            <div class="property-card-content-top-feature">
+                                                <i class="icon icon-w16 icon-shower"></i>
+                                                <span>1</span>
+                                            </div>
+                                            <div class="property-card-content-top-feature">
+                                                <i class="icon icon-w16 icon-square"></i>
+                                                <span>2</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="property-card-content-bottom">
+                                        <div class="property-card-content-bottom-price">
+                                            <span>$350</span>
+                                            <small>/month</small>
+                                        </div>
+                                        <div class="property-card-content-bottom-favorite">
+                                            <i class="icon icon-w20 icon-favorite"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-4 mb-3">
+                            <div class="property-card">
+                                <div class="property-card-image">
+                                    <div class="property-card-image-tag">
+                                        <a href="#" class="bg-one text-white">
+                                            For Rent
+                                        </a>
+                                        <a href="#" class="bg-two text-dark">
+                                            Featured
+                                        </a>
+                                    </div>
+                                    <a href="#">
+                                        <img src="assets/img/product/product-6.jpg" alt="property">
+                                    </a>
+                                </div>
+                                <div class="property-card-content">
+                                    <div class="property-card-content-top">
+                                        <a href="#" class="property-card-content-top-title">
+                                            Villa Garden With Pool
+                                        </a>
+                                        <div class="property-card-content-top-address">
+                                            <i class="icon icon-w20 icon-location"></i>
+                                            <span>6822 Bay Pkwy, Brooklyn</span>
+                                        </div>
+                                        <div class="d-flex gap-2">
+                                            <div class="property-card-content-top-feature">
+                                                <i class="icon icon-w16 icon-bad"></i>
+                                                <span>3</span>
+                                            </div>
+                                            <div class="property-card-content-top-feature">
+                                                <i class="icon icon-w16 icon-shower"></i>
+                                                <span>1</span>
+                                            </div>
+                                            <div class="property-card-content-top-feature">
+                                                <i class="icon icon-w16 icon-square"></i>
+                                                <span>2</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="property-card-content-bottom">
+                                        <div class="property-card-content-bottom-price">
+                                            <span>$350</span>
+                                            <small>/month</small>
+                                        </div>
+                                        <div class="property-card-content-bottom-favorite">
+                                            <i class="icon icon-w20 icon-favorite"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-4 mb-3">
+                            <div class="property-card">
+                                <div class="property-card-image">
+                                    <div class="property-card-image-tag">
+                                        <a href="#" class="bg-one text-white">
+                                            For Rent
+                                        </a>
+                                        <a href="#" class="bg-two text-dark">
+                                            Featured
+                                        </a>
+                                    </div>
+                                    <a href="#">
+                                        <img src="assets/img/product/product-2.jpg" alt="property">
+                                    </a>
+                                </div>
+                                <div class="property-card-content">
+                                    <div class="property-card-content-top">
+                                        <a href="#" class="property-card-content-top-title">
+                                            Villa Garden With Pool
+                                        </a>
+                                        <div class="property-card-content-top-address">
+                                            <i class="icon icon-w20 icon-location"></i>
+                                            <span>6822 Bay Pkwy, Brooklyn</span>
+                                        </div>
+                                        <div class="d-flex gap-2">
+                                            <div class="property-card-content-top-feature">
+                                                <i class="icon icon-w16 icon-bad"></i>
+                                                <span>3</span>
+                                            </div>
+                                            <div class="property-card-content-top-feature">
+                                                <i class="icon icon-w16 icon-shower"></i>
+                                                <span>1</span>
+                                            </div>
+                                            <div class="property-card-content-top-feature">
+                                                <i class="icon icon-w16 icon-square"></i>
+                                                <span>2</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="property-card-content-bottom">
+                                        <div class="property-card-content-bottom-price">
+                                            <span>$350</span>
+                                            <small>/month</small>
+                                        </div>
+                                        <div class="property-card-content-bottom-favorite">
+                                            <i class="icon icon-w20 icon-favorite"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-4 mb-3">
+                            <div class="property-card">
+                                <div class="property-card-image">
+                                    <div class="property-card-image-tag">
+                                        <a href="#" class="bg-one text-white">
+                                            For Rent
+                                        </a>
+                                        <a href="#" class="bg-two text-dark">
+                                            Featured
+                                        </a>
+                                    </div>
+                                    <a href="#">
+                                        <img src="assets/img/product/product-3.jpg" alt="property">
+                                    </a>
+                                </div>
+                                <div class="property-card-content">
+                                    <div class="property-card-content-top">
+                                        <a href="#" class="property-card-content-top-title">
+                                            Villa Garden With Pool
+                                        </a>
+                                        <div class="property-card-content-top-address">
+                                            <i class="icon icon-w20 icon-location"></i>
+                                            <span>6822 Bay Pkwy, Brooklyn</span>
+                                        </div>
+                                        <div class="d-flex gap-2">
+                                            <div class="property-card-content-top-feature">
+                                                <i class="icon icon-w16 icon-bad"></i>
+                                                <span>3</span>
+                                            </div>
+                                            <div class="property-card-content-top-feature">
+                                                <i class="icon icon-w16 icon-shower"></i>
+                                                <span>1</span>
+                                            </div>
+                                            <div class="property-card-content-top-feature">
+                                                <i class="icon icon-w16 icon-square"></i>
+                                                <span>2</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="property-card-content-bottom">
+                                        <div class="property-card-content-bottom-price">
+                                            <span>$350</span>
+                                            <small>/month</small>
+                                        </div>
+                                        <div class="property-card-content-bottom-favorite">
+                                            <i class="icon icon-w20 icon-favorite"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-4 mb-3">
+                            <div class="property-card">
+                                <div class="property-card-image">
+                                    <div class="property-card-image-tag">
+                                        <a href="#" class="bg-one text-white">
+                                            For Rent
+                                        </a>
+                                        <a href="#" class="bg-two text-dark">
+                                            Featured
+                                        </a>
+                                    </div>
+                                    <a href="#">
+                                        <img src="assets/img/product/product-5.jpg" alt="property">
+                                    </a>
+                                </div>
+                                <div class="property-card-content">
+                                    <div class="property-card-content-top">
+                                        <a href="#" class="property-card-content-top-title">
+                                            Villa Garden With Pool
+                                        </a>
+                                        <div class="property-card-content-top-address">
+                                            <i class="icon icon-w20 icon-location"></i>
+                                            <span>6822 Bay Pkwy, Brooklyn</span>
+                                        </div>
+                                        <div class="d-flex gap-2">
+                                            <div class="property-card-content-top-feature">
+                                                <i class="icon icon-w16 icon-bad"></i>
+                                                <span>3</span>
+                                            </div>
+                                            <div class="property-card-content-top-feature">
+                                                <i class="icon icon-w16 icon-shower"></i>
+                                                <span>1</span>
+                                            </div>
+                                            <div class="property-card-content-top-feature">
+                                                <i class="icon icon-w16 icon-square"></i>
+                                                <span>2</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="property-card-content-bottom">
+                                        <div class="property-card-content-bottom-price">
+                                            <span>$350</span>
+                                            <small>/month</small>
+                                        </div>
+                                        <div class="property-card-content-bottom-favorite">
+                                            <i class="icon icon-w20 icon-favorite"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-4 mb-3">
+                            <div class="property-card">
+                                <div class="property-card-image">
+                                    <div class="property-card-image-tag">
+                                        <a href="#" class="bg-one text-white">
+                                            For Rent
+                                        </a>
+                                        <a href="#" class="bg-two text-dark">
+                                            Featured
+                                        </a>
+                                    </div>
+                                    <a href="#">
+                                        <img src="assets/img/product/product-1.jpg" alt="property">
+                                    </a>
+                                </div>
+                                <div class="property-card-content">
+                                    <div class="property-card-content-top">
+                                        <a href="#" class="property-card-content-top-title">
+                                            Villa Garden With Pool
+                                        </a>
+                                        <div class="property-card-content-top-address">
+                                            <i class="icon icon-w20 icon-location"></i>
+                                            <span>6822 Bay Pkwy, Brooklyn</span>
+                                        </div>
+                                        <div class="d-flex gap-2">
+                                            <div class="property-card-content-top-feature">
+                                                <i class="icon icon-w16 icon-bad"></i>
+                                                <span>3</span>
+                                            </div>
+                                            <div class="property-card-content-top-feature">
+                                                <i class="icon icon-w16 icon-shower"></i>
+                                                <span>1</span>
+                                            </div>
+                                            <div class="property-card-content-top-feature">
+                                                <i class="icon icon-w16 icon-square"></i>
+                                                <span>2</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="property-card-content-bottom">
+                                        <div class="property-card-content-bottom-price">
+                                            <span>$350</span>
+                                            <small>/month</small>
+                                        </div>
+                                        <div class="property-card-content-bottom-favorite">
+                                            <i class="icon icon-w20 icon-favorite"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-4 mb-3">
+                            <div class="property-card">
+                                <div class="property-card-image">
+                                    <div class="property-card-image-tag">
+                                        <a href="#" class="bg-one text-white">
+                                            For Rent
+                                        </a>
+                                        <a href="#" class="bg-two text-dark">
+                                            Featured
+                                        </a>
+                                    </div>
+                                    <a href="#">
+                                        <img src="assets/img/product/product-4.jpg" alt="property">
+                                    </a>
+                                </div>
+                                <div class="property-card-content">
+                                    <div class="property-card-content-top">
+                                        <a href="#" class="property-card-content-top-title">
+                                            Villa Garden With Pool
+                                        </a>
+                                        <div class="property-card-content-top-address">
+                                            <i class="icon icon-w20 icon-location"></i>
+                                            <span>6822 Bay Pkwy, Brooklyn</span>
+                                        </div>
+                                        <div class="d-flex gap-2">
+                                            <div class="property-card-content-top-feature">
+                                                <i class="icon icon-w16 icon-bad"></i>
+                                                <span>3</span>
+                                            </div>
+                                            <div class="property-card-content-top-feature">
+                                                <i class="icon icon-w16 icon-shower"></i>
+                                                <span>1</span>
+                                            </div>
+                                            <div class="property-card-content-top-feature">
+                                                <i class="icon icon-w16 icon-square"></i>
+                                                <span>2</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="property-card-content-bottom">
+                                        <div class="property-card-content-bottom-price">
+                                            <span>$350</span>
+                                            <small>/month</small>
+                                        </div>
+                                        <div class="property-card-content-bottom-favorite">
+                                            <i class="icon icon-w20 icon-favorite"></i>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
